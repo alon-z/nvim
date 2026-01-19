@@ -25,3 +25,4 @@ My nvim configs
 - [ ] https://github.com/nikitabobko/AeroSpace
 - [ ] https://luarocks.org/
 - [ ] https://github.com/folke/neoconf.nvim
+- [ ] https://github.com/kristijanhusak/vim-dadbod-ui

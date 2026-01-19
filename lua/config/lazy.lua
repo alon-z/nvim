@@ -24,6 +24,18 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
+    {
+      "folke/snacks.nvim",
+      priority = 1000,
+      ---@type snacks.Config
+      opts = {
+       lazygit = {
+          -- your lazygit configuration comes here
+          -- or leave it empty to use the default settings
+          -- refer to the configuration section below
+        }
+      }
+    },
     -- import your plugins
     { import = "plugins" },
   },
