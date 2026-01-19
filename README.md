@@ -62,3 +62,7 @@ nvim
 - [ ] https://github.com/kristijanhusak/vim-dadbod-ui
 - [x] https://github.com/nvim-lualine/lualine.nvim
   - Statusline with auto theme detection
+- [x] https://github.com/sainnhe/gruvbox-material
+  - Gruvbox colorscheme with softer contrast
+  - Background: `medium` (options: `hard`, `medium`, `soft`)
+  - Palette: `material` (options: `material`, `mix`, `original`)
