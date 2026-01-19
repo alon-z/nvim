@@ -60,3 +60,5 @@ nvim
 - [ ] https://luarocks.org/
 - [ ] https://github.com/folke/neoconf.nvim
 - [ ] https://github.com/kristijanhusak/vim-dadbod-ui
+- [x] https://github.com/nvim-lualine/lualine.nvim
+  - Statusline with auto theme detection
