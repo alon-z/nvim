@@ -31,6 +31,21 @@ nvim
 - Resume Claude conversation with `<leader>cr` (Space+c+r)
 - Navigate between windows with `<C-h/j/k/l>`
 
+### Discovering Keybindings (which-key)
+Press a key and wait ~200ms to see available keybindings in a popup.
+
+**Leader key (`Space`):** Press `Space` and wait to see all leader-based commands:
+- `<leader>c` - Claude Code commands
+- `<leader>?` - Show buffer-local keymaps
+- Navigate the popup: press shown keys to execute, `<Esc>` to cancel, `<BS>` to go back
+
+**g prefix:** Press `g` and wait to see all g-commands:
+- `gd` - Go to definition
+- `gg` - Go to first line
+- `gf` - Go to file under cursor
+- `gc` - Comment (if configured)
+- And many more built-in Vim commands
+
 # TODO
 
 - [ ] https://github.com/wsdjeg/SpaceVim
@@ -62,6 +77,10 @@ nvim
 - [ ] https://github.com/kristijanhusak/vim-dadbod-ui
 - [x] https://github.com/nvim-lualine/lualine.nvim
   - Statusline with auto theme detection
+- [x] https://github.com/folke/which-key.nvim
+  - Shows available keybindings in a popup as you type
+  - `<leader>?` to show buffer local keymaps
+  - Built-in plugins for marks, registers, and spelling suggestions
 - [x] https://github.com/sainnhe/gruvbox-material
   - Gruvbox colorscheme with softer contrast
   - Background: `medium` (options: `hard`, `medium`, `soft`)
