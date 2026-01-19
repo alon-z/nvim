@@ -85,3 +85,9 @@ Press a key and wait ~200ms to see available keybindings in a popup.
   - Gruvbox colorscheme with softer contrast
   - Background: `medium` (options: `hard`, `medium`, `soft`)
   - Palette: `material` (options: `material`, `mix`, `original`)
+- [ ] https://github.com/letieu/jira.nvim
+- [ ] https://github.com/whyisdifficult/jiratui
+- [ ] https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-fuzzy.md
+- [ ] https://github.com/Rimkomatic/Re-Nvim/tree/main
+- [ ] https://terminaltrove.com/dotstate/
+- [ ] https://github.com/MeanderingProgrammer/render-markdown.nvim
