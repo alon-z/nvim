@@ -21,6 +21,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+vim.opt.winblend = 10
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {

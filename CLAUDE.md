@@ -38,3 +38,11 @@ Auto-imports via `{ import = "plugins" }` in `lua/config/lazy.lua:40`.
 - lazy.nvim auto-bootstraps on first run
 - Use lazy loading (event/cmd) for performance
 - Don't require plugin files directly; use `dependencies` field
+
+## Documentation Practice
+
+- **ALWAYS** update README.md when adding/configuring plugins
+- Mark installed plugins in the TODO section with `[x]`
+- Add key commands and usage notes under each installed item
+- Update "Basic Usage" section with new keybindings
+- Keep documentation in sync with actual configuration

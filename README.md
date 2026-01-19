@@ -27,11 +27,18 @@ nvim
 - Use `<Tab>` for Copilot code suggestions
 - Access the file tree with nvim-tree
 - Use Lazy.nvim for plugin management (`:Lazy` command)
+- Toggle Claude Code terminal with `<C-,>` (Ctrl+comma)
+- Resume Claude conversation with `<leader>cr` (Space+c+r)
+- Navigate between windows with `<C-h/j/k/l>`
 
-# TDOO
+# TODO
 
 - [ ] https://github.com/wsdjeg/SpaceVim
-- [ ] https://github.com/greggh/claude-code.nvim
+- [x] https://github.com/greggh/claude-code.nvim
+  - Toggle with <C-,> (Ctrl+comma)
+  - Resume conversation picker with <leader>cr (Space+c+r)
+  - Opens in floating window (85% size, centered, rounded border, 80% transparent)
+  - Navigate back with <C-k> or close with <C-,>
 - [ ] https://github.com/folke/lazy.nvim
 - [ ] https://github.com/junegunn/vim-plug
 - [ ] https://github.com/topaxi/pipeline.nvim
