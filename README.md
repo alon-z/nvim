@@ -13,7 +13,8 @@ My nvim configs
 - [ ] https://github.com/nvim-treesitter/nvim-treesitter
 - [ ] https://www.youtube.com/watch?v=ZWWxwwUsPNw
 - [ ] https://github.com/neovim/neovim/issues/34763
-- [ ] https://github.com/zbirenbaum/copilot.lua
+- [x] https://github.com/zbirenbaum/copilot.lua
+  - Suggestion with <Tab>
 - [ ] https://github.com/zbirenbaum/copilot-cmp
 - [ ] https://nvchad.com/
 - [ ] https://github.com/numToStr/Comment.nvim
