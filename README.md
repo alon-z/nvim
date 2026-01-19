@@ -1,6 +1,32 @@
 # nvim
 
-My nvim configs
+Modern Neovim config with Copilot, lazy loading, and treesitter.
+
+## Getting Started
+
+### Prerequisites
+- [Neovim](https://github.com/neovim/neovim) (0.8+)
+- Git
+- A terminal with true color support
+
+### Installation
+
+1. Clone this configuration to your nvim config directory:
+```bash
+git clone <repository-url> ~/.config/nvim
+```
+
+2. Start Neovim:
+```bash
+nvim
+```
+
+3. Lazy.nvim will automatically install all plugins on first launch. Wait for the installation to complete.
+
+### Basic Usage
+- Use `<Tab>` for Copilot code suggestions
+- Access the file tree with nvim-tree
+- Use Lazy.nvim for plugin management (`:Lazy` command)
 
 # TDOO
 
