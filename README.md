@@ -13,3 +13,13 @@ My nvim configs
 - [ ] https://github.com/nvim-treesitter/nvim-treesitter
 - [ ] https://www.youtube.com/watch?v=ZWWxwwUsPNw
 - [ ] https://github.com/neovim/neovim/issues/34763
+- [ ] https://github.com/zbirenbaum/copilot.lua
+- [ ] https://github.com/zbirenbaum/copilot-cmp
+- [ ] https://nvchad.com/
+- [ ] https://github.com/numToStr/Comment.nvim
+- [ ] https://github.com/folke/noice.nvim
+- [ ] https://github.com/yetone/avante.nvim/commit/2159c0c75c2887cc6bcb43020be31337316547cf
+- [ ] https://github.com/yorukot/superfile
+- [ ] https://github.com/jesseduffield/lazygit
+- [ ] https://fishshell.com/
+- [ ] https://github.com/nikitabobko/AeroSpace
