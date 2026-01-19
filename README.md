@@ -23,3 +23,5 @@ My nvim configs
 - [ ] https://github.com/jesseduffield/lazygit
 - [ ] https://fishshell.com/
 - [ ] https://github.com/nikitabobko/AeroSpace
+- [ ] https://luarocks.org/
+- [ ] https://github.com/folke/neoconf.nvim
