@@ -29,6 +29,7 @@ nvim
 - Access the file tree with nvim-tree
 - Use Lazy.nvim for plugin management (`:Lazy` command)
 - Toggle Claude Code terminal with `<C-,>` (Ctrl+comma)
+- Open Claude Code in vertical split (side panel) with `<leader>cp` (Space+c+p)
 - Resume Claude conversation with `<leader>cr` (Space+c+r)
 - Navigate between windows with `<C-h/j/k/l>`
 
@@ -52,6 +53,7 @@ Press a key and wait ~200ms to see available keybindings in a popup.
 - [ ] https://github.com/wsdjeg/SpaceVim
 - [x] https://github.com/greggh/claude-code.nvim
   - Toggle with <C-,> (Ctrl+comma)
+  - Open in vertical split (side panel) with <leader>cp (Space+c+p)
   - Resume conversation picker with <leader>cr (Space+c+r)
   - Opens in floating window (85% size, centered, rounded border, 80% transparent)
   - Navigate back with <C-k> or close with <C-,>
