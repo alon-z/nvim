@@ -32,6 +32,7 @@ nvim
 - Open Claude Code in vertical split (side panel) with `<leader>cp` (Space+c+p)
 - Resume Claude conversation with `<leader>cr` (Space+c+r)
 - Navigate between windows with `<C-h/j/k/l>`
+- GitHub integration with Octo: `<leader>o` prefix (issues, PRs, discussions)
 
 ### Discovering Keybindings (which-key)
 Press a key and wait ~200ms to see available keybindings in a popup.
@@ -92,6 +93,15 @@ Press a key and wait ~200ms to see available keybindings in a popup.
   - Gruvbox colorscheme with softer contrast
   - Background: `medium` (options: `hard`, `medium`, `soft`)
   - Palette: `material` (options: `material`, `mix`, `original`)
+- [x] https://github.com/pwntester/octo.nvim
+  - Edit and review GitHub issues, PRs, and discussions in Neovim
+  - `<leader>oi` - List GitHub issues
+  - `<leader>op` - List GitHub PRs
+  - `<leader>od` - List GitHub discussions
+  - `<leader>on` - List GitHub notifications
+  - `<leader>os` - Search GitHub
+  - Uses snacks.nvim as picker
+  - Requires `gh` CLI to be installed and authenticated
 - [ ] https://github.com/letieu/jira.nvim
 - [ ] https://github.com/whyisdifficult/jiratui
 - [ ] https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-fuzzy.md
