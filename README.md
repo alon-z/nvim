@@ -25,6 +25,7 @@ nvim
 
 ### Basic Usage
 - Use `<Tab>` for Copilot code suggestions
+- Smart search files with `<C-p>` (VS Code style picker)
 - Access the file tree with nvim-tree
 - Use Lazy.nvim for plugin management (`:Lazy` command)
 - Toggle Claude Code terminal with `<C-,>` (Ctrl+comma)
@@ -54,6 +55,10 @@ Press a key and wait ~200ms to see available keybindings in a popup.
   - Resume conversation picker with <leader>cr (Space+c+r)
   - Opens in floating window (85% size, centered, rounded border, 80% transparent)
   - Navigate back with <C-k> or close with <C-,>
+- [x] https://github.com/folke/snacks.nvim
+  - Smart file finder with `<C-p>` (VS Code style popup)
+  - Lazygit integration with `<leader>lg`
+  - Picker layout: centered, 50% width, 40% height, rounded borders
 - [ ] https://github.com/folke/lazy.nvim
 - [ ] https://github.com/junegunn/vim-plug
 - [ ] https://github.com/topaxi/pipeline.nvim
