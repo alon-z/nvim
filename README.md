@@ -33,6 +33,7 @@ nvim
 - Resume Claude conversation with `<leader>cr` (Space+c+r)
 - Navigate between windows with `<C-h/j/k/l>`
 - GitHub integration with Octo: `<leader>o` prefix (issues, PRs, discussions)
+- View CI/CD pipelines with `<leader>ci` (GitHub Actions, GitLab CI)
 
 ### Discovering Keybindings (which-key)
 Press a key and wait ~200ms to see available keybindings in a popup.
@@ -64,7 +65,15 @@ Press a key and wait ~200ms to see available keybindings in a popup.
   - Picker layout: centered, 50% width, 40% height, rounded borders
 - [ ] https://github.com/folke/lazy.nvim
 - [ ] https://github.com/junegunn/vim-plug
-- [ ] https://github.com/topaxi/pipeline.nvim
+- [x] https://github.com/topaxi/pipeline.nvim
+  - View CI/CD pipeline status (GitHub Actions, GitLab CI) in Neovim
+  - `<leader>ci` - Open pipeline panel
+  - `q` - Close panel
+  - `gp` - Open pipeline on GitHub
+  - `gr` - Open run on GitHub
+  - `gj` - Open job on GitHub
+  - `d` - Dispatch new workflow run
+  - Requires `gh` CLI authenticated or `GITHUB_TOKEN` env var
 - [ ] https://github.com/nvim-tree/nvim-tree.lua
 - [ ] https://github.com/nvim-treesitter/nvim-treesitter
 - [ ] https://www.youtube.com/watch?v=ZWWxwwUsPNw
