@@ -28,12 +28,13 @@ nvim
 - Smart search files with `<C-p>` (VS Code style picker)
 - Access the file tree with nvim-tree
 - Use Lazy.nvim for plugin management (`:Lazy` command)
-- Toggle Claude Code terminal with `<C-,>` (Ctrl+comma)
-- Open Claude Code in vertical split (side panel) with `<leader>cp` (Space+c+p)
+- Toggle Claude Code with `<C-,>` (Ctrl+comma) or `<leader>a` prefix
 - Resume Claude conversation with `<leader>cr` (Space+c+r)
+- Add files to Claude with fzf: `<leader>aff` (files), `<leader>afg` (grep), `<leader>afb` (buffers)
 - Navigate between windows with `<C-h/j/k/l>`
 - GitHub integration with Octo: `<leader>o` prefix (issues, PRs, discussions)
 - View CI/CD pipelines with `<leader>ci` (GitHub Actions, GitLab CI)
+- Format code with `<leader>cf` or auto-format on save
 
 ### Discovering Keybindings (which-key)
 Press a key and wait ~200ms to see available keybindings in a popup.
@@ -53,12 +54,18 @@ Press a key and wait ~200ms to see available keybindings in a popup.
 # TODO
 
 - [ ] https://github.com/wsdjeg/SpaceVim
-- [x] https://github.com/greggh/claude-code.nvim
-  - Toggle with <C-,> (Ctrl+comma)
-  - Open in vertical split (side panel) with <leader>cp (Space+c+p)
-  - Resume conversation picker with <leader>cr (Space+c+r)
-  - Opens in floating window (85% size, centered, rounded border, 80% transparent)
-  - Navigate back with <C-k> or close with <C-,>
+- [x] https://github.com/coder/claudecode.nvim (migrated from greggh/claude-code.nvim)
+  - `<C-,>` - Toggle Claude terminal (works in normal and terminal mode)
+  - `<leader>ac` - Toggle Claude terminal (alternative)
+  - `<leader>af` - Focus Claude terminal
+  - `<leader>cr` - Resume Claude conversation
+  - `<leader>aC` - Continue Claude conversation
+  - `<leader>ab` - Add current buffer to context
+  - `<leader>as` - Send visual selection to Claude / Add file from tree browsers
+  - `<leader>aa` - Accept diff
+  - `<leader>ad` - Deny diff
+  - Opens in right panel (40% width)
+  - Requires snacks.nvim and Claude Code CLI
 - [x] https://github.com/folke/snacks.nvim
   - Smart file finder with `<C-p>` (VS Code style popup)
   - Lazygit integration with `<leader>lg`
@@ -80,6 +87,7 @@ Press a key and wait ~200ms to see available keybindings in a popup.
 - [ ] https://github.com/neovim/neovim/issues/34763
 - [x] https://github.com/zbirenbaum/copilot.lua
   - Suggestion with <Tab>
+  - Next suggest edit <Space+p> 
 - [ ] https://github.com/zbirenbaum/copilot-cmp
 - [ ] https://nvchad.com/
 - [ ] https://github.com/numToStr/Comment.nvim
@@ -118,3 +126,20 @@ Press a key and wait ~200ms to see available keybindings in a popup.
 - [ ] https://terminaltrove.com/dotstate/
 - [ ] https://github.com/MeanderingProgrammer/render-markdown.nvim
 - [ ] https://jiratui.sh/
+- [ ] https://github.com/CopilotC-Nvim/CopilotChat.nvim
+- [x] https://github.com/stevearc/conform.nvim
+  - Lightweight formatter plugin with format-on-save
+  - `<leader>cf` - Format buffer (works in normal and visual mode)
+  - `:ConformInfo` - View configured formatters and log file
+  - Auto-formats on save with 500ms timeout
+  - Configured formatters: stylua (Lua), ruff (Python), prettier/prettierd (JS/TS/JSON/YAML/HTML/CSS/MD), goimports+gofmt (Go), rustfmt (Rust), shfmt (shell)
+  - Falls back to LSP formatting when no formatter is available
+- [x] https://github.com/pittcat/claude-fzf.nvim
+  - Seamless integration between fzf-lua and claudecode.nvim
+  - `<leader>aff` - Add files to Claude context (fzf picker)
+  - `<leader>afg` - Search and add code to Claude (grep picker)
+  - `<leader>afb` - Add buffers to Claude context
+  - `<leader>afG` - Add Git files to Claude context
+  - `<leader>afd` - Add directory files to Claude context
+  - In fzf: `Tab` multi-select, `Ctrl-y` smart context, `Ctrl-d` send directory
+  - Requires fzf-lua (included as dependency)

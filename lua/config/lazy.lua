@@ -23,6 +23,12 @@ vim.g.maplocalleader = "\\"
 
 vim.opt.winblend = 10
 
+-- Indentation settings
+vim.opt.expandtab = true   -- Use spaces instead of tabs
+vim.opt.shiftwidth = 2     -- Indent by 2 spaces
+vim.opt.tabstop = 2        -- Tab = 2 spaces
+vim.opt.softtabstop = 2    -- Backspace removes 2 spaces
+
 -- Window navigation with Ctrl+hjkl
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to lower window" })
