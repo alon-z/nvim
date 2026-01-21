@@ -117,3 +117,4 @@ Press a key and wait ~200ms to see available keybindings in a popup.
 - [ ] https://github.com/Rimkomatic/Re-Nvim/tree/main
 - [ ] https://terminaltrove.com/dotstate/
 - [ ] https://github.com/MeanderingProgrammer/render-markdown.nvim
+- [ ] https://jiratui.sh/
