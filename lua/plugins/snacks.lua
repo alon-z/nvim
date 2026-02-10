@@ -6,12 +6,30 @@ return {
       { "<C-p>", function() Snacks.picker.smart() end, desc = "Smart Find Files (VS Code style)" },
       { "<C-S-p>", function() Snacks.picker.commands({ layout = { preset = "select_no_preview" } }) end, desc = "Commands" },
       { "<leader>sk", function() Snacks.picker.keymaps({ layout = { preset = "select_no_preview" } }) end, desc = "Keymaps" },
-      { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "Symbols" },
+      { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "Document Symbols" },
+      { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "Workspace Symbols" },
+      { "<leader>sr", function() Snacks.picker.lsp_references() end, desc = "References" },
+      { "<leader>si", function() Snacks.picker.lsp_implementations() end, desc = "Implementations" },
+      { "<C-S-f>", function() Snacks.picker.grep() end, desc = "Search in Files (VS Code style)" },
+      { "<leader>sg", function() Snacks.picker.grep() end, desc = "Grep (Search in Files)" },
+      { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Search Word Under Cursor" },
     },
     config = function()
       require("snacks").setup({
         picker = {
           enabled = true,
+          sources = {
+            grep = {
+              hidden = true,
+              ignored = false,
+              exclude = { "node_modules", ".git", "dist", "build" },
+            },
+            files = {
+              hidden = true,
+              ignored = false,
+              exclude = { "node_modules", ".git", "dist", "build" },
+            },
+          },
           layouts = {
             telescope = {
               reverse = true,
